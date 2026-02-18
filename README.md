@@ -16,10 +16,10 @@ This skill provides a conversational interface to the [official Raindrop.io MCP 
 ```mermaid
 flowchart LR
   U[User Request in Natural Language]
-  C[MCP-Compatible AI Client\nClaude, ChatGPT, Cursor, etc.]
-  S[Raindrop.io Skill Instructions\nSKILL.md + references]
-  M[Official Raindrop.io MCP Server\nhttps://api.raindrop.io/rest/v2/ai/mcp]
-  A[Raindrop.io API + Account Data\nBookmarks, Collections, Tags, Highlights]
+  C[MCP-Compatible AI Client Claude, ChatGPT, Cursor, etc.]
+  S[Raindrop.io Skill Instructions SKILL.md + references]
+  M[Official Raindrop.io MCP Server https://api.raindrop.io/rest/v2/ai/mcp]
+  A[Raindrop.io API + Account Data Bookmarks, Collections, Tags, Highlights]
   R[Structured Response to User]
 
   U --> C
