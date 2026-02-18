@@ -27,4 +27,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Validate skill format
-        run: npx --yes --registry=https://registry.npmjs.org skills-ref validate ./
+        run: |
+          TMP_DIR="$(mktemp -d)"
+          cp -R "$GITHUB_WORKSPACE" "$TMP_DIR/raindrop-io"
+          npx --yes --registry=https://registry.npmjs.org skills-ref validate "$TMP_DIR/raindrop-io"
