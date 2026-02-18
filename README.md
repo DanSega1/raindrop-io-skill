@@ -11,6 +11,29 @@ This skill provides a conversational interface to the [official Raindrop.io MCP 
 - **Manage reading lists** with progress tracking and highlights
 - **Organize research** with systematic workflows and bulk operations
 
+## Skill Flow
+
+```mermaid
+flowchart LR
+  U[User Request in Natural Language]
+  C[MCP-Compatible AI Client\nClaude, ChatGPT, Cursor, etc.]
+  S[Raindrop.io Skill Instructions\nSKILL.md + references]
+  M[Official Raindrop.io MCP Server\nhttps://api.raindrop.io/rest/v2/ai/mcp]
+  A[Raindrop.io API + Account Data\nBookmarks, Collections, Tags, Highlights]
+  R[Structured Response to User]
+
+  U --> C
+  C --> S
+  S --> C
+  C --> M
+  M --> A
+  A --> M
+  M --> C
+  C --> R
+
+  R -. Follow-up request .-> U
+```
+
 ## Features
 
 - Natural language bookmark management
