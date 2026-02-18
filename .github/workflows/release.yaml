@@ -46,11 +46,13 @@ jobs:
           cp -R "$GITHUB_WORKSPACE" "$TMP_DIR/raindrop-io"
           npx --yes --registry=https://registry.npmjs.org skills-ref validate "$TMP_DIR/raindrop-io"
 
+      - name: Prepare semantic-release config
+        run: cp .github/release.config.cjs ./release.config.cjs
+
       - name: Release
         uses: cycjimmy/semantic-release-action@v4
         with:
           semantic_version: 24
-          extends: ./.github/release.config.cjs
           extra_plugins: |
             @semantic-release/changelog
             @semantic-release/git
