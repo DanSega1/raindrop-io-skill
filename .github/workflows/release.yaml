@@ -3,6 +3,14 @@ name: Release
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - '.gitignore'
+      - 'README.md'
+      - 'CHANGELOG.md'
+      - 'LICENSE'
+      - 'references/**'
+      - '.github/workflows/pr-validation.yaml'
+      - '.github/commitlint.config.cjs'
   workflow_dispatch:
 
 jobs:
