@@ -1,5 +1,7 @@
 # Raindrop.io AI Skill
 
+[![Available on Skillstore.io](assets/images/skillstore-banner.png)](https://skillstore.io/skills/dansega1-raindrop-io)
+
 A production-ready AI skill for managing Raindrop.io bookmarks through natural language conversations. Compatible with Claude Code, Claude Desktop, Claude.ai, and other MCP-enabled AI clients.
 
 ## Overview
