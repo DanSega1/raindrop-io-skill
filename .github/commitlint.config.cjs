@@ -19,6 +19,6 @@ module.exports = {
         'test'
       ]
     ],
-    'subject-full-stop': [0]
+    'subject-full-stop': [0, 'never', '.']
   }
 };
