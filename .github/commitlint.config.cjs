@@ -1,5 +1,6 @@
 module.exports = {
   extends: ['@commitlint/config-conventional'],
+  ignores: [(message) => message.trim() === 'Initial plan'],
   rules: {
     'type-enum': [
       2,
@@ -19,6 +20,7 @@ module.exports = {
         'test'
       ]
     ],
-    'subject-full-stop': [0, 'never', '.']
+    'subject-full-stop': [0, 'never', '.'],
+    'body-max-line-length': [0]
   }
 };
