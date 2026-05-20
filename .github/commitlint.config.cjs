@@ -8,6 +8,7 @@ module.exports = {
         'build',
         'chore',
         'ci',
+        'doc',
         'docs',
         'feat',
         'fix',
@@ -17,6 +18,7 @@ module.exports = {
         'style',
         'test'
       ]
-    ]
+    ],
+    'subject-full-stop': [0]
   }
 };
