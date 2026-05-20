@@ -62,6 +62,16 @@ flowchart LR
 
 ### 1. Install the Skill
 
+**Via npx (recommended)**:
+```bash
+npx skills add DanSega1/raindrop-io-skill
+```
+
+If you are installing from a repo with multiple skills:
+```bash
+npx skills add DanSega1/raindrop-io-skill --skill raindrop-io
+```
+
 **From Skillstore.io**:
 ```bash
 # Visit skillstore.io and search for "raindrop-io"
@@ -115,6 +125,7 @@ Once configured, start a conversation and try:
 - **[Setup Guide](references/SETUP.md)** - Detailed setup instructions for all platforms
 - **[API Reference](references/API-REFERENCE.md)** - MCP tools documentation
 - **[Advanced Workflows](references/WORKFLOWS.md)** - Power user workflows and templates
+- **[Publishing Guide](references/PUBLISHING.md)** - How to distribute via npx and optional Homebrew tap
 
 ## Example Workflows
 
