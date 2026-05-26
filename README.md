@@ -67,11 +67,6 @@ flowchart LR
 npx skills add DanSega1/raindrop-io-skill
 ```
 
-If you are installing from a repo with multiple skills:
-```bash
-npx skills add DanSega1/raindrop-io-skill --skill raindrop-io
-```
-
 **From Skillstore.io**:
 ```bash
 # Visit skillstore.io and search for "raindrop-io"
